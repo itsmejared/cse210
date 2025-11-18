@@ -1,0 +1,14 @@
+What is Version Control and Why is it Important?
+
+Version control is a way to keep track of changes to a project’s files over time, allowing you to see what changed, who made the change, and when it happened. This is really helpful for teams, since everyone can work on the same project without worrying about overwriting each other’s work or losing progress.
+
+A huge benefit is that it acts as a safety net. If something goes wrong or someone makes a mistake, you can quickly return to an earlier version instead of starting from scratch. 
+
+A simple Git command that I use often is:
+
+git commit -m "Add functionality yzx"
+
+
+This command saves the changes you made with a short note explaining what you did.
+
+In short, version control helps teams stay coordinated, avoid mistakes, and move forward faster. It’s something I’d never want to work without once I’ve used it.

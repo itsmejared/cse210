@@ -1,0 +1,17 @@
+What is Abstraction and Why It Matters?
+
+I think of abstraction as a way to make complicated things simpler, so I can focus on what’s important. In programming, this means hiding how a class or function works and only showing what other parts of the program need to use. It’s like driving a car: you press the pedal and don’t have to worry about how the engine works.
+
+The biggest benefit of abstraction is that it keeps code organized and easier to manage. Each part of the program does its own job without showing unnecessary details.
+
+In my Journal program, I utilized abstraction by separating features into classes, including Journal, Entry, and PromptGenerator. When I write a new entry, I don’t deal with how it’s stored or saved. I just do this:
+
+Entry newEntry = new Entry();
+newEntry._date = DateTime.Now.ToString("MM/dd/yyyy");
+newEntry._promptText = prompt;
+newEntry._entryText = response;
+newEntry._mood = mood;
+
+myJournal.AddEntry(newEntry);
+
+The Journal class handles adding it to a list and later saving it to a file. I don’t need to know how it’s implemented—just that it works. That’s how it is.

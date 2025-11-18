@@ -1,0 +1,5 @@
+Encapsulation, for me, means keeping the internal data of a class protected so that only the class itself can change it. This prevents accidental changes, keeps the program more organized, and makes each part easier to maintain and update. 
+A simple example from my Scripture Memorizer project is when I stored the book name privately inside the Reference class; The only way to set it is through the constructor, and nothing outside the class can touch that value directly: 
+	private string _book; 
+	public Reference(string book) { _book = book; }
+Even though it’s a small piece of code, it makes the point clear—encapsulation creates safe boundaries and allows each class to manage its own state.
