@@ -1,0 +1,15 @@
+Inheritance is a principle in object-oriented programming that lets one class share its attributes and behaviors with another. It’s like creating a general “parent” class and then building more specific “child” classes that automatically receive everything the parent already has. I like inheritance because it keeps the code cleaner and avoids repeating the same logic in multiple places.
+In my mindfulness program, I created an Activity base class with shared features like the name, description, duration, and the starting/ending messages. Then the specific activities, such as the Breathing Activity, inherited from that base class and only added their unique behavior.
+
+Here is an example from my code:
+
+public class BreathingActivity : Activity
+{
+    public BreathingActivity()
+        : base("Breathing Activity",
+        "This activity will guide you through slow breathing to help you relax.")
+    {
+    }
+}
+
+Using inheritance made the program easier to organize and faster to build because all the shared functionality lived in one place.
