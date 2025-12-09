@@ -1,0 +1,31 @@
+1. Abstraction
+Briefly define the principle:
+ Abstraction is about focusing on the essential parts of something and ignoring the details that aren’t important at the moment. It lets you think in simple terms instead of getting lost in the technical stuff.
+How I used it in one of my programs:
+ I used abstraction in my Exercise Tracking program by creating a base Activity class. This class represents the general idea of “an exercise activity” without worrying about how each activity calculates distance or speed. Running, Cycling, and Swimming all build on top of this shared idea.
+How it helped make the program flexible:
+ Because I started with an abstract view of what an activity is, adding new activity types later is really easy. I don’t have to change the rest of the program—I just create another class that follows the same structure. The program can grow without breaking anything.
+ 
+2. Encapsulation
+Briefly define the principle:
+ Encapsulation means protecting the internal data of a class and only exposing what other parts of the program actually need. It keeps things organized and prevents accidental changes.
+How I used it in one of my programs:
+ In several of my projects, like the Goal Tracker and the Exercise Tracker, I made my member variables private and exposed them through public methods when necessary. This way, no other part of the program could directly mess with the internal state of a class.
+How it helped make the program flexible:
+ By keeping the data hidden, I was free to change how a class works internally without affecting the rest of the code. For example, if I decide to calculate something differently or store it in another format, the rest of the program doesn’t need to be updated. Encapsulation basically reduces “ripple effects.”
+ 
+3. Inheritance
+Briefly define the principle:
+ Inheritance lets you create new classes based on an existing one. It helps you reuse shared attributes and behaviors instead of rewriting the same code over and over.
+How I used it in one of my programs:
+ In the Exercise Tracking program, all three activities—Running, Cycling, and Swimming—inherit from the Activity class. They automatically get the shared attributes like date and length, and I only needed to define what makes each activity different.
+How it helped make the program flexible:
+ Using inheritance made the whole structure easier to maintain. If I ever need to add a new shared attribute or method, I only update the base class, and all activity types get the update instantly. Plus, creating a new type of activity requires almost no changes to the existing code.
+ 
+4. Polymorphism
+Briefly define the principle:
+ Polymorphism allows different classes to respond to the same method call in their own way. It means you can treat different objects through a common interface.
+How I used it in one of my programs:
+ In my exercise program, each activity overrides methods like GetDistance(), GetSpeed(), and GetPace(). Even though they share the same method names, each activity calculates these values differently. Then, when I loop through a list of Activity objects, I just call GetSummary() and let each class handle the details.
+How it helped make the program flexible:
+ Polymorphism made it possible to write code that works with any current or future activity type. If I add a new activity, I don’t need to change the loop or the summary code at all. The program adapts automatically because each activity knows how to behave on its own.
