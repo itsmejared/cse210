@@ -1,0 +1,7 @@
+Polymorphism basically means that different objects can respond to the same method in their own way. I like to think of it as giving several classes the same “button,” but each one decides what happens when you press it. This is really helpful because it keeps the code clean and avoids a bunch of messy if-else checks. One big benefit is that I can work with a list of base-class types and still get the correct behavior for each object without having to worry about what specific class it is.
+
+In my Eternal Quest project, I used polymorphism with the RecordEvent() method. All goals share that method name, but each one does something different—for example, SimpleGoal marks itself complete, EternalGoal just adds points, ChecklistGoal tracks progress, and NegativeGoal subtracts points. Here’s a small example:
+
+int points = goal.RecordEvent();
+
+Even though goal is typed as Goal, the program automatically calls the version that belongs to the actual goal type. This made it easy to add new features without breaking anything and kept the design much easier to maintain.
